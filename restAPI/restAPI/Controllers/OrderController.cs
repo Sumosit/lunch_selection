@@ -13,7 +13,6 @@ namespace restAPI.Controllers
             Db = db;
         }
 
-        // GET api/blog
         [HttpGet("/order")]
         public async Task<IActionResult> GetLatest()
         {
@@ -23,7 +22,6 @@ namespace restAPI.Controllers
             return new OkObjectResult(result);
         }
 
-        // GET api/blog/5
         //[HttpGet("/order/{id}")]
         //public async Task<IActionResult> GetOne(int id)
         //{
@@ -35,7 +33,6 @@ namespace restAPI.Controllers
         //    return new OkObjectResult(result);
         //}
 
-        //// POST api/blog
         //[HttpPost]
         //public async Task<IActionResult> Post([FromBody]OrderItem body)
         //{
@@ -45,7 +42,6 @@ namespace restAPI.Controllers
         //    return new OkObjectResult(body);
         //}
 
-        //// PUT api/blog/5
         //[HttpPut("{id}")]
         //public async Task<IActionResult> PutOne(int id, [FromBody]OrderItem body)
         //{
@@ -59,7 +55,6 @@ namespace restAPI.Controllers
         //    return new OkObjectResult(result);
         //}
 
-        //// DELETE api/blog/5
         //[HttpDelete("{id}")]
         //public async Task<IActionResult> DeleteOne(int id)
         //{
@@ -72,7 +67,6 @@ namespace restAPI.Controllers
         //    return new OkResult();
         //}
 
-        //// DELETE api/blog
         //[HttpDelete]
         //public async Task<IActionResult> DeleteAll()
         //{
